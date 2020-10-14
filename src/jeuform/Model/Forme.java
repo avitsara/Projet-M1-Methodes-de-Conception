@@ -3,19 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Model;
+package jeuform.Model;
+
+import Model.*;
+import util.AbstractFormeListener;
 
 /**
  *
  * @author ilyas
  */
-public abstract class Forme{
+public abstract class Forme extends AbstractFormeListener {
     
     protected float surface;
     protected float x;
     protected float y;
-    
-    //constructeur
     
     abstract public void translation(float x,float y);
     abstract public void suppression(Forme forme);

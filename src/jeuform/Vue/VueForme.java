@@ -3,21 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jeuform;
+package jeuform.Vue;
 
-import jeuform.Vue.GUI;
+import java.awt.Graphics2D;
+import javax.swing.JPanel;
 
 /**
  *
  * @author ilyas
  */
-public class Main {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        GUI gui = new GUI();
-    }
-    
+abstract public class VueForme extends JPanel{
+    abstract public void paint(Graphics2D g);
 }

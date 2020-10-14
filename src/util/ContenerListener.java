@@ -3,21 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jeuform;
+package util;
 
-import jeuform.Vue.GUI;
+import jeuform.Model.Forme;
 
 /**
  *
  * @author ilyas
  */
-public class Main {
+public interface ContenerListener {
+    abstract public void formeAjoutee(Forme forme);
+    abstract public void formeRetiree(Forme forme);
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        GUI gui = new GUI();
-    }
-    
 }
